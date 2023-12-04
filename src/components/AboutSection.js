@@ -1,13 +1,15 @@
 import home1 from "../img/home1.png";
 import { Section, Description, Image, Hide } from "../styles";
+//Framer motion
+import { motion } from "framer-motion";
 
 const AboutSection = () => {
   return (
-    <About>
+    <Section>
       <Description>
         <div className="title">
           <Hide>
-            <h2>We work to make</h2>
+            <motion.h2>We work to make</motion.h2>
           </Hide>
           <Hide>
             <h2>
@@ -27,7 +29,7 @@ const AboutSection = () => {
       <Image>
         <img src={home1} alt="Guy with a camera" />
       </Image>
-    </About>
+    </Section>
   );
 };
 
