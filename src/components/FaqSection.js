@@ -1,9 +1,17 @@
 import styled from "styled-components";
 import { Section } from "../styles";
+//Animations
+import { motion } from "framer-motion";
+import { pageAnimation } from "../Animation";
 
 const FaqSection = () => {
   return (
-    <Faq>
+    <Faq
+      variants={pageAnimation}
+      exit={"exit"}
+      initial={"hidden"}
+      animate={"show"}
+    >
       <h2>
         Any questions? <span>FAQ</span>
       </h2>
@@ -56,7 +64,7 @@ const FaqSection = () => {
 };
 
 //Styled components
-const Faq = styled(Section)`
+const Faq = styled(motion.Section)`
   display: block;
   span {
     display: block;
