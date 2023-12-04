@@ -1,6 +1,4 @@
 import home1 from "../img/home1.png";
-//Styled
-import styled from "styled-components";
 import { Section, Description, Image, Hide } from "../styles";
 
 const AboutSection = () => {
@@ -32,8 +30,5 @@ const AboutSection = () => {
     </About>
   );
 };
-
-//Styled components
-const About = styled(Section)``;
 
 export default AboutSection;
