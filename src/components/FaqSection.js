@@ -4,19 +4,15 @@ import styled from "styled-components";
 import { Section } from "../styles";
 //Animations
 import { motion, LayoutGroup } from "framer-motion";
-import { pageAnimation } from "../Animation";
+import { pageAnimation, fade } from "../Animation";
 //Components
 import Toggle from "./Toggle";
+import { UseScroll } from "./useScroll";
 
 const FaqSection = () => {
-  const [faqToggle, setFaqToggle] = useState(false);
+  const [element, controls] = UseScroll(0.4);
   return (
-    <Faq
-      variants={pageAnimation}
-      exit={"exit"}
-      initial={"hidden"}
-      animate={"show"}
-    >
+    <Faq ref={element} variants={fade} animate={controls} initial="hidden">
       <h2>
         Any questions? <span>FAQ</span>
       </h2>
