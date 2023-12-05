@@ -14,7 +14,7 @@ import { fade } from "../Animation";
 import { UseScroll } from "./useScroll";
 
 const ServicesSection = () => {
-  const [element, controls] = UseScroll(0.5);
+  const [element, controls] = UseScroll(0.2);
   return (
     <Services ref={element} variants={fade} animate={controls} initial="hidden">
       <Description>
@@ -72,6 +72,9 @@ const Services = styled(Section)`
 const Cards = styled.div`
   display: flex;
   flex-wrap: wrap;
+  @media screen and (max-width: 1300px) {
+    justify-content: center;
+  }
 `;
 const Card = styled.div`
   flex-basis: 20rem;

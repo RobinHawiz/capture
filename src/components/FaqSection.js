@@ -10,7 +10,7 @@ import Toggle from "./Toggle";
 import { UseScroll } from "./useScroll";
 
 const FaqSection = () => {
-  const [element, controls] = UseScroll(0.4);
+  const [element, controls] = UseScroll(0.2);
   return (
     <Faq ref={element} variants={fade} animate={controls} initial="hidden">
       <h2>

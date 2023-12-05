@@ -10,6 +10,11 @@ const GlobalStyle = createGlobalStyle`
         background: #1b1b1b;
         font-family: 'Inter', sans-serif;
     }
+    html{
+        @media screen and (max-width: 1700px) {
+            font-size: 80%;
+        }
+    }
     button{
         font-weight: bold;
         font-size: 1.1rem;
