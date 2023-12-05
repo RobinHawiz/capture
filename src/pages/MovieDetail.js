@@ -9,6 +9,8 @@ import { motion } from "framer-motion";
 import { pageAnimation } from "../Animation";
 //Components
 import Award from "../components/Award";
+import ScrollTop from "../components/scrollTop";
+
 const MovieDetail = () => {
   const location = useLocation();
   const url = location.pathname;
@@ -49,6 +51,7 @@ const MovieDetail = () => {
           </ImageDisplay>
         </Details>
       )}
+      <ScrollTop />
     </>
   );
 };

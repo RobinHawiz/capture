@@ -17,6 +17,8 @@ import {
   sliderContainer,
 } from "../Animation";
 import { UseScroll } from "../components/useScroll";
+//Components
+import ScrollTop from "../components/scrollTop";
 
 const OurWork = () => {
   const [element, controls] = UseScroll(0.5);
@@ -79,6 +81,7 @@ const OurWork = () => {
           </Hide>
         </Link>
       </Movie>
+      <ScrollTop />
     </Work>
   );
 };

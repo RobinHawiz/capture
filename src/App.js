@@ -10,6 +10,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import GlobalStyle from "./components/GlobalStyle";
 //Animation
 import { AnimatePresence } from "framer-motion";
+
 function App() {
   const location = useLocation();
   return (
