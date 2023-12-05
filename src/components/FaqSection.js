@@ -1,10 +1,8 @@
-//useState
-import { useState } from "react";
 import styled from "styled-components";
 import { Section } from "../styles";
 //Animations
-import { motion, LayoutGroup } from "framer-motion";
-import { pageAnimation, fade } from "../Animation";
+import { LayoutGroup } from "framer-motion";
+import { fade } from "../Animation";
 //Components
 import Toggle from "./Toggle";
 import { UseScroll } from "./useScroll";

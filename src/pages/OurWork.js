@@ -7,7 +7,7 @@ import athlete from "../img/athlete-small.png";
 import racer from "../img/theracer-small.png";
 import goodtimes from "../img/goodtimes-small.png";
 //Animations
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 import {
   pageAnimation,
   fade,
